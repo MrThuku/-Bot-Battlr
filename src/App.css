@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.botCollection{
+  width: 100%;
+  height: 50%;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  justify-content: space-evenly;
+  grid-row-gap: 5px;
+  background-color: rgb(229, 229, 229);
+  padding: 10px 0;
+}
+.singleBot{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: rgb(178, 178, 178);
+  border-radius: 5px;
+}
+.singleBot img{
+  width: 100%;
+}
+.singleBot p{
+  text-align: center;
+}
+.yourBotArmy{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 0 10px;
+  overflow-x: auto;
+}
+.singleArmyBot{
+  width: 20%;
+  height: 90%;
+  background-color: rgb(178, 178, 178);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.singleArmyBot img{
+  height: 50%;
+}
+.singleArmyBot .catchPhrase{
+  word-wrap: break-word;
+  width: 80%;
+}
+.removeBot{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #CC3300;
+  font-size: 2rem;
+  font-weight: 900;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.removeBot:hover{
+  background-color: gray;
+}
